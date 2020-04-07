@@ -1,10 +1,16 @@
 /* CSS */
+@font-Poppins: "Poppins";
+@font-Lato: "Lato";
 
+@color-pink: #FF9FAF;
+@color-brown: #A85F34;
+@color-black: #3D3D3D;
 
 body {
 	color: #333;
 	font-size: 14px;
-	font-family: 'arial', sans-serif;
+	font-family: @font-Lato, sans-serif;
+	font-weight: normal;
 	line-height: 23px;
 	margin: 0;
 }
@@ -73,15 +79,16 @@ img.border:hover, img.border:active {
 	transition: all ease-out 0.4s;
 }
 
-.wrapper { display: block; margin: 0 auto; text-align: center; max-width: 1200px; padding-left: 15px; padding-right:15px; }
+.wrapper { display: block; margin: 0 auto; text-align: center; max-width: 1166px; padding-left: 15px; padding-right:15px; }
 .imgwrp img { max-width:100%;}
 img {
 	max-width:100%;
 }
 /* --------------------- HEADER LAYOUT --------------------- */
 #headerweb {
-
+	
 }
+
 
 
 
@@ -93,7 +100,13 @@ img {
 #bodyweb {
 }
 
-
+.mainbaner {
+	background: @color-pink;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: sticky;
+}
 /* --------------------- END BODYWEB LAYOUT --------------------- */
 
 /* --------------------- FOOTER LAYOUT --------------------- */
