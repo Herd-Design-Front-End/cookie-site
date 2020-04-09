@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="14px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>arrow-paging-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.314" y="0.709" width="19" height="13"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-paging-right" transform="translate(9.000000, 7.000000) scale(-1, 1) translate(-9.000000, -7.000000) translate(-1.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Rectangle"></g>
+            <g id="Group" mask="url(#mask-2)">
+                <g transform="translate(-1.314000, -0.709000)">
+                    <g transform="translate(0.025000, 0.398000)">
+                        <path d="M1.117,7.115 L7.117,1.115 C7.23166133,1.00020557 7.40430821,0.966046253 7.55404476,1.02852783 C7.7037813,1.0910094 7.80094162,1.23775299 7.8,1.4 L7.8,2.2 C7.80008345,2.30611852 7.75799543,2.40792116 7.683,2.483 L3.565,6.6 L19.795,6.6 C20.0159139,6.6 20.195,6.7790861 20.195,7 L20.195,7.8 C20.195,8.0209139 20.0159139,8.2 19.795,8.2 L3.565,8.2 L7.681,12.316 C7.75697493,12.3909942 7.7998201,12.4932466 7.8,12.6 L7.8,13.4 C7.8001274,13.5618827 7.70266905,13.7078819 7.55311605,13.769849 C7.40356305,13.831816 7.23140463,13.7975321 7.117,13.683 L1.117,7.683 C1.04127494,7.60789336 0.99868067,7.50565501 0.99868067,7.399 C0.99868067,7.29234499 1.04127494,7.19010664 1.117,7.115 Z" id="Path" fill="#8F8F8F" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
