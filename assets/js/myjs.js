@@ -11,7 +11,8 @@ $(document).ready(function () {
 		prevArrow: '<div class="slick-prev"><img src="assets/images/arrow-right.svg" alt=""/></div>',
 		nextArrow: '<div class="slick-next"><img src="assets/images/arrow-left.svg" alt=""/></div>',
 		slidesToShow: 3,
-		slidesToScroll: 1,					
+		slidesToScroll: 1,			
+		autoplay:true		
 	});	
 	$(".wrp-listtestimoni").slick({
 		dots: false,
@@ -19,7 +20,8 @@ $(document).ready(function () {
 		prevArrow: '<div class="slick-prev"><img src="assets/images/arrowtestimoni-left.svg" alt=""/></div>',
 		nextArrow: '<div class="slick-next"><img src="assets/images/arrowtestimoni-right.svg" alt=""/></div>',
 		slidesToShow: 1,
-		slidesToScroll: 1,					
+		slidesToScroll: 1,		
+		autoplay:true		
 	});	
 });
 
