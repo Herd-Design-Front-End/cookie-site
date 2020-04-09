@@ -82,3 +82,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Notera Personal Use Only';
+    src: url('../fonts/NoteraPersonalUseOnly.eot');
+    src: url('../fonts/NoteraPersonalUseOnly.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NoteraPersonalUseOnly.woff2') format('woff2'),
+        url('../fonts/NoteraPersonalUseOnly.woff') format('woff'),
+        url('../fonts/NoteraPersonalUseOnly.ttf') format('truetype'),
+        url('../fonts/NoteraPersonalUseOnly.svg#NoteraPersonalUseOnly') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
