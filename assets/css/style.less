@@ -162,6 +162,10 @@ img {
 #bodyweb {
 }
 
+.bggray {
+	background: @color-gray2;
+}
+
 .mainbaner {
 	background: url("../images/bgmainbaner@2x.jpg") left bottom;
 	.bgcover;
@@ -260,6 +264,12 @@ img {
 	border: @color-pink solid 1px;
 	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.09);	
 	.animatecss;
+	&.noradius {
+		border-radius: 0 !important;
+		box-shadow: none;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 	&:hover {
 		background: none;
 		border:@color-pink solid 1px;
@@ -702,7 +712,7 @@ img {
 }
 
 .paging {
-	margin-bottom: @gap+@gap3;
+	padding-bottom: @gap+@gap3;
 	ul {
 		li {
 			display: inline-block;			
@@ -1139,6 +1149,49 @@ iframe {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+}
+
+.wrp-bloglist {
+	margin-top: @gap;
+	.content {
+		.wrapper;
+	}
+}
+
+.wrp-listitemblog {
+	@gapspace: 25px;
+	margin-bottom: @gap3;
+	.item-blog {
+		background: #fff;
+		text-align: left;
+		color: @color-black2;
+		margin-bottom: @gapspace+@gapspace;
+	}
+	.col-md-4 {
+		padding-left: @gapspace;
+		padding-right: @gapspace;
+	}
+	.row {
+		margin-left: -@gapspace;
+		margin-right: -@gapspace;
+	}
+	.contenttxt {
+		padding: 25px;
+		p {
+			min-height: 80px;
+			margin-bottom: 20px;
+		}
+	}
+	h4 {
+		font-family: @font-Poppins;
+		font-size: 21px;
+		color: @color-black;
+	}
+	.date {
+		font-family: @font-Lato;
+		font-weight: 300;
+		margin-bottom: 15px;
+	}
 }
 /* --------------------- END BODYWEB LAYOUT --------------------- */
 
