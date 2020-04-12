@@ -1193,6 +1193,62 @@ iframe {
 		margin-bottom: 15px;
 	}
 }
+
+.wrp-blogsingle {
+	position: relative;
+	margin-top: @gap;
+	color: @color-black2;
+	.content {
+		.wrapper;
+		text-align: left;
+	}
+	.paper {
+		position: relative;
+		padding-left: 90px;
+		.big {
+			position: absolute;
+			left: 0;
+			top:0;
+			font-size: 80px;
+			line-height: 1;
+		}
+	}
+	section {
+		margin-bottom: @gap2;
+	}
+	h4 {
+		font-size: 20px;
+	}
+}
+
+.tags {
+	margin-bottom: @gap;
+	font-size: 15px;
+	ul {
+		display: inline-block;
+		margin: 0;
+		margin-left: 10px;
+		line-height: 20px;
+		font-size: 12px;
+		li {
+			display: inline-block;
+			margin: 0 4px;
+			a {
+				display: block;
+				background: @color-pink2;
+				border:@color-pink solid 1px;
+				padding: 0px 10px;
+				.animatecss;
+				&:hover {
+					.animatecss;
+					background: @color-pink;
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
 /* --------------------- END BODYWEB LAYOUT --------------------- */
 
 /* --------------------- FOOTER LAYOUT --------------------- */
