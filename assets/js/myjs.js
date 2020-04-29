@@ -1,3 +1,7 @@
+$(window).on('load', function () {
+	$(".loader").delay(300).fadeOut("slow");
+});
+
 $(document).ready(function () {
     new WOW().init();
 	$('#fullpage').fullpage({
@@ -42,6 +46,8 @@ $(document).ready(function () {
 	$(".navmenu").click(function(){
 		$(this).toggleClass("active");
 		$(".mainmenu").toggleClass("active");
-	})
+	});	
 });
+
+
 

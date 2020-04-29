@@ -29,10 +29,18 @@ body {
 .loader {
 	position: fixed;
 	left: 0;
+	display: flex;
 	right: 0;
-	width: 70px;
-	height: 70px;
-	margin: 20% auto;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	align-items: center;
+	background: rgba(255, 159, 175, 0.7);
+	img {
+		margin: 0 auto;
+		display: block;
+	}
 }
 
 .bgcover {
@@ -1560,11 +1568,7 @@ h4 {
 
 .wrp-archivelist {
 	margin-bottom: @gap3;
-	ul {
-		li {
 
-		}
-	}
 }
 /* --------------------- END BODYWEB LAYOUT --------------------- */
 
@@ -2496,11 +2500,5 @@ h4 {
 	}
 }
 
-/* Desktop small screen */
-@media (min-width: 992px) {
-}
 
-/* Desktop large screen */
-@media (min-width: 1200px) {
-}
 
