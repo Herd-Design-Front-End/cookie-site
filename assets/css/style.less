@@ -26,6 +26,15 @@ body {
 	margin: 0;
 }
 
+.loader {
+	position: fixed;
+	left: 0;
+	right: 0;
+	width: 70px;
+	height: 70px;
+	margin: 20% auto;
+}
+
 .bgcover {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -167,9 +176,6 @@ img {
 
 /* --------------------- BODYWEB LAYOUT --------------------- */
 
-#bodyweb {
-}
-
 .bggray {
 	background: @color-gray2;
 }
@@ -182,6 +188,7 @@ img {
 	height: 100%;
 	.content {
 		.wrapper;
+		margin: 110px auto 0 auto;
 		width: 100%;
 		display: flex;
 		align-items: center;
@@ -189,6 +196,20 @@ img {
 	}
 	.left {
 		text-align: left;
+		.btn{ border-radius: 50px; }
+	}
+	.right{
+		.lbounce {
+			animation-name: lbounce;
+			animation-timing-function: linear;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes lbounce {
+			0%   { transform: translateY(0); }
+			50%  { transform: translateY(-20px); }
+			100% { transform: translateY(0); }
+		}
 	}
 	h4 {
 		font-size: 28px;
@@ -196,15 +217,28 @@ img {
 		margin: 0;
 	}
 	h3 {
+		position: relative;
 		font-size: 71px;
 		font-weight: 500;
 		font-family: @font-Poppins;
 		margin-bottom: 20px;
+		z-index: 1;
+	}
+	h3::after{
+		content: '';
+		position: absolute;
+		width: 230px;
+		height: 24px;
+		background-color: #F7C73F;
+		border-radius: 12px;
+		bottom: 5px;
+		right: 0;
+		z-index: -1;
 	}
 }
 
 @gap: 90px;
-@gap2: 50px;
+@gap2: 70px;
 @gap3: 30px;
 
 .title {
@@ -267,7 +301,8 @@ img {
 	background: @color-pink;
 	color: #fff;
 	padding: 18px;
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: 600;
 	line-height: normal;
 	border: @color-pink solid 1px;
 	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.09);	
@@ -381,20 +416,19 @@ img {
 }
 
 .wrp-services {
-	background: url("../images/bgservices.png") bottom center @color-gray2;
-	.bgcover;
+	background: url("../images/doodle-1.svg") bottom center @color-gray2;
+	background-repeat: no-repeat;
 	min-height: 500px;
 	padding: @gap2 0;
 	padding-bottom: 0;
 	.content {
 		.wrapper;
+		.wrp-itemservices{ padding-bottom: 60px; }
 	}
 	.item-services {
 		display: block;
 		margin-bottom: @gap3;
 		min-height: 230px;
-		.imgwrp {
-		}
 		h4 {
 			font-family: @font-Poppins;
 			font-weight: 500;
@@ -411,7 +445,6 @@ img {
 	padding: 50px 0;
 	font-family: @font-Lato;
 	font-size: 20px;
-	margin: @gap3 0;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -439,17 +472,18 @@ img {
 }
 
 .wrp-bestcakes {
-	margin-bottom: @gap;
+	margin-bottom: @gap - 40;
+	padding: @gap2 0;
 	.content {
 		.wrapper;
 	}
 }
 
 .wrp-list-itemproducts {
-	margin-bottom: @gap2;
+	margin-bottom: 0;
 	.col-lg-4 {
 		.item-product {
-			margin: @gap2 0;
+			margin-bottom: @gap2 + 15;
 		}
 		&:nth-child(3n+0) {
 			.item-product {
@@ -464,9 +498,9 @@ img {
 }
 
 .wrp-ourbakers {
-	background: url("../images//doodle-2.svg") top center @color-gray2;
+	background: url("../images/doodle-2.svg") top center @color-gray2;
+	background-repeat: no-repeat;
 	padding: @gap 0;
-	.bgcover;
 	.content {
 		.wrapper;
 	}
@@ -487,12 +521,12 @@ img {
 		color: #fff;
 		border-radius: 7px;
 		box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.16);
-		padding: 10px 5px;
+		padding: 15px 5px;
 		position: relative;
 	}
 	ul {
 		margin: 0;
-		margin-top: 20px;
+		margin-top: 15px;
 		li {
 			display: inline-block;
 			text-align: center;
@@ -527,7 +561,7 @@ img {
 	}
 	h6 {
 		margin: 0;
-		font-size: 9px;
+		font-size: 15px;
 		font-family: @font-Lato;
 	}
 }
@@ -679,6 +713,7 @@ img {
 		padding-right: 15px;
 		position: absolute;
 		bottom: 15px;
+		font-weight: 400;
 	}
 	.left, .right {
 		flex: 1;
@@ -915,9 +950,10 @@ img {
 	}
 	.contentinfo {
 		background: @color-pink3;
-		padding: @gap2;
+		padding: 30px 50px;
 		text-align: left;
 		position: relative;
+		top: -15px;
 		z-index: 1;
 		margin-left: -@gap2;
 		max-width: 700px;
@@ -958,8 +994,9 @@ img {
 	}
 	h3 {
 		font-family: @font-Poppins;
-		font-size: 35px;
+		font-size: 30px;
 		font-weight: 500;
+		color: #3D3D3D;
 		position: relative;
 		padding-bottom: 15px;
 		margin-bottom: 20px;
@@ -973,6 +1010,10 @@ img {
 			left: 0;
 		}
 	}
+}
+
+.wrp-descproduct{
+	margin-bottom: @gap2;
 }
 
 .wrp-team {
@@ -1081,6 +1122,10 @@ img {
 			display: inline-block;
 			width: 70px;
 			margin: 0 auto;
+			border-radius: 50px;
+			font-size: 16px;
+			background-color: #fff;
+			color:@color-black;
 			&:hover {
 				opacity: 0.8;
 			}
@@ -1127,7 +1172,7 @@ img {
 			content: "";
 			width: 40px;
 			height: 3px;
-			background: @color-pink;
+			background: @color-orange;
 			position: absolute;
 			left: 0;
 			bottom: 0;
@@ -1135,9 +1180,6 @@ img {
 	}
 }
 
-.contactform {
-	
-}
 
 .form {
 	input[type="text"], input[type="email"], input[type="phone"], input[type="number"], input[type="password"] {
