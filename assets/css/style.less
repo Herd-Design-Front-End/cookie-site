@@ -1944,6 +1944,10 @@ h4 {
 			}
 		}
 	}
+	.wrp-orders {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
 	.hidden-xs {
 		display: none;
 	}
@@ -1953,6 +1957,7 @@ h4 {
 	}	
 	.wrp-profileabout {
 		margin-bottom: 0;
+		margin-top: 70px;
 		.imgwrp {
 			&::before, &::after {
 				display: none;
@@ -1969,6 +1974,7 @@ h4 {
 		.contentinfo {
 			max-width: none;
 			margin-left: 0;
+			padding: 30px;
 		}
 		.left {
 			flex: 1;
@@ -1977,6 +1983,15 @@ h4 {
 		.right {
 			flex: 1;
 		}
+	}
+	.wrp-blogsingle {
+		margin-top: 70px;
+		section {
+			margin-bottom: 50px;
+		}
+	}
+	.wrp-bloglist {
+		margin-top: 70px;
 	}
 	.wrp-team {
 		margin-top: 70px;
@@ -2033,7 +2048,14 @@ h4 {
 		padding-bottom: 70px;
 	}
 	.wrp-brands {
-		padding: 30px 0;
+		padding: 30px 0;		
+	}
+	.wrp-listbrands {
+		flex-direction: column;
+		padding-bottom: 30px;
+		.item-brand {
+			margin: 15px 0;
+		}
 	}
 	.select_custom {
 		height: 30px;
@@ -2393,12 +2415,20 @@ h4 {
 	}
 	.wrp-listnews {
 		.left {
-			flex: 1;
+			flex: none;
 			&:hover {
 				&::before, &::after {
 					content: none;
 				}
 			}
+		}
+		.right {
+			flex: 1;
+		}
+		.btn {
+			position: relative;
+			width: 120px;
+			margin-top: 10px;
 		}
 	}
 	.wrp-headpages {
