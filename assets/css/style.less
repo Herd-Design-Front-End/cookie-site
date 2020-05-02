@@ -143,6 +143,7 @@ img {
 		align-items: center;
 		li {
 			position: relative;
+			margin: 10px 0;
 			&::before {
 				content: "";
 				position: absolute;
@@ -163,6 +164,39 @@ img {
 					opacity: 1;
 					.animatecss;
 				}
+			}
+		}
+	}
+	.submenu {
+		position: relative;
+		&:hover {
+			ul {
+				display: block;
+			}
+		}
+		ul {
+			position: absolute;
+			display: block;			
+			width: 200px;
+			background: @color-gray2;
+			margin-left: -15px;
+			padding: 10px 0;
+			box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.09);	
+			display: none;			
+			li {
+				display: block;
+				position: relative;
+				&::before {
+					right: auto;
+					top: 20px;
+					margin-left: 20px;
+				}
+				&:hover,&.active {
+					&::before {
+						opacity: 1;
+						.animatecss;
+					}
+				}	
 			}
 		}
 	}
@@ -1670,6 +1704,8 @@ h4 {
 		padding: 10px;
 		font-size: 26px;
 		box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.13);
+		position: relative;
+		z-index: 5;
 			
 	}
 	.navmenu {
@@ -1701,24 +1737,58 @@ h4 {
 		}
 	}
 	.mainmenu {
-		margin-top: 5px;
-		display: none;
+		background: url("../images/doodle-1.svg") bottom center #fff;
+		background-size: cover;
+		display: block;
+		padding-top: 	75px;
+		padding-bottom: 75px;
 		opacity: 0;
+		visibility: hidden;
+		margin-top: -70px;
 		.animatecss;
 		&.active {
-			display: flex;
 			.animatecss;
 			opacity: 1;
+			visibility: visible;
+			.animatecss;
+			margin-top: 5px;
+
+		}
+		.submenu {
+			position: relative;
+			width: 130px;
+			ul {
+				position: relative;
+				margin-left: 0;
+				padding: 5px 15px;
+				li {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+			&::after {
+				content: "+";
+				color: @color-black2;
+				position: absolute;
+				right: 0;
+				top: 5px;
+			}
 		}
 		.mainlogo {
 			display: none;
 		}
 		ul {
-			display: block;
+			display: inline-block;
 			margin: 0 auto;
+			min-width: 130px;
+
 			li {
 				display: block;
 				text-align: left;
+				margin: 0;
+				&::before {
+					content: none;
+				}
 				 a {
 					 padding: 5px 0;
 					 display: block;
@@ -2125,6 +2195,8 @@ h4 {
 		padding: 10px;
 		font-size: 26px;
 		box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.13);
+		position: relative;
+		z-index: 5;
 			
 	}
 	.navmenu {
@@ -2156,24 +2228,58 @@ h4 {
 		}
 	}
 	.mainmenu {
-		margin-top: 5px;
-		display: none;
+		background: url("../images/doodle-1.svg") bottom center #fff;
+		background-size: cover;
+		display: block;
+		padding-top: 	75px;
+		padding-bottom: 75px;
 		opacity: 0;
+		visibility: hidden;
+		margin-top: -70px;
 		.animatecss;
 		&.active {
-			display: flex;
 			.animatecss;
 			opacity: 1;
+			visibility: visible;
+			.animatecss;
+			margin-top: 5px;
+
+		}
+		.submenu {
+			position: relative;
+			width: 130px;
+			ul {
+				position: relative;
+				margin-left: 0;
+				padding: 5px 15px;
+				li {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+			&::after {
+				content: "+";
+				color: @color-black2;
+				position: absolute;
+				right: 0;
+				top: 5px;
+			}
 		}
 		.mainlogo {
 			display: none;
 		}
 		ul {
-			display: block;
+			display: inline-block;
 			margin: 0 auto;
+			min-width: 130px;
+
 			li {
 				display: block;
 				text-align: left;
+				margin: 0;
+				&::before {
+					content: none;
+				}
 				 a {
 					 padding: 5px 0;
 					 display: block;
