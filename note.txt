@@ -1,5 +1,0 @@
-1) hapus selector css yang tidak dipakai/kosong
-2) gambar pada page about -> our product, gunakan overlay kemudian atur nilai opacity atau rgba nya,
-3) semua timing animasi fade in up ganti dengan 0.3s
-
-
