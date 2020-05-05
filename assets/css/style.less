@@ -572,6 +572,10 @@ img {
 	ul {
 		margin: 0;
 		margin-top: 15px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
 		li {
 			display: inline-block;
 			text-align: center;
@@ -581,11 +585,15 @@ img {
 				background: rgba(0, 0, 0, 0.50);
 				width: 22px;
 				height: 22px;
+				padding: 5px;
 				border-radius: 50%;
 				display: flex;
 				align-items: center;
 				color: #fff;
 				text-align: center;
+				img {
+					margin: 0 auto;
+				}
 				.animatecss;
 				&:hover {
 					text-decoration: none;
