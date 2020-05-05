@@ -41,8 +41,25 @@ $(document).ready(function () {
 		nextArrow: '<div class="slick-next"><img src="assets/images/arrowtestimoni-right.svg" alt=""/></div>',
 		slidesToShow: 1,
 		slidesToScroll: 1,		
-		autoplay:false		
+		autoplay:false,
+		responsive: [
+			{
+				breakpoint: 991,
+				arrows:false,
+				
+			},
+		  ]				
+
 	});	
+$('.customleft').click(function(){
+	$('.wrp-listtestimoni').slick('slickPrev');
+})
+
+$('.customright').click(function(){
+	$('.wrp-listtestimoni').slick('slickNext');
+})
+	
+
 	$(".navmenu").click(function(){
 		$(this).toggleClass("active");
 		$(".mainmenu").toggleClass("active");
